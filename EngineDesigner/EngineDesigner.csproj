@@ -1,0 +1,712 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{647E63ED-B649-4F5D-AD72-2A3DB484617E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EngineDesigner</RootNamespace>
+    <AssemblyName>EngineDesigner</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Logo_Pistons.ico</ApplicationIcon>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;//TEST_WINDOWS; //TEST_CONSOLES; SHOW_CONSOLE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SlimDX, Version=4.0.13.43, Culture=neutral, PublicKeyToken=b1b0c32fd1ffe4f9, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SolutionItems\SolutionInfo.cs">
+      <Link>SolutionInfo.cs</Link>
+    </Compile>
+    <Compile Include="Controls\Charting\AxisOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Charting\AxisOptions.Designer.cs">
+      <DependentUpon>AxisOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Charting\CrankshaftDiagram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Charting\CycleDiagram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Charting\CycleDiagram.Designer.cs">
+      <DependentUpon>CycleDiagram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Editors\EngineEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Editors\EngineEditor.Designer.cs">
+      <DependentUpon>EngineEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Editors\FunctionEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Editors\FunctionEditor.Designer.cs">
+      <DependentUpon>FunctionEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Editors\IPartEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Editors\IPartEditor.Designer.cs">
+      <DependentUpon>IPartEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Viewers\EngineViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Viewers\EngineViewer.Designer.cs">
+      <DependentUpon>EngineViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Viewers\IPartViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Viewers\IPartViewer.Designer.cs">
+      <DependentUpon>IPartViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionAverage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionAverage.Designer.cs">
+      <DependentUpon>Form_AddAFunctionAverage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionBase.Designer.cs">
+      <DependentUpon>Form_AddAFunctionBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionForce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionForce.Designer.cs">
+      <DependentUpon>Form_AddAFunctionForce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionKinematics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionKinematics.Designer.cs">
+      <DependentUpon>Form_AddAFunctionKinematics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionMoment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionMoment.Designer.cs">
+      <DependentUpon>Form_AddAFunctionMoment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionReference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionReference.Designer.cs">
+      <DependentUpon>Form_AddAFunctionReference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionSuperposition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionSuperposition.Designer.cs">
+      <DependentUpon>Form_AddAFunctionSuperposition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionTorque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionTorque.Designer.cs">
+      <DependentUpon>Form_AddAFunctionTorque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\CylinderFunctionControls\CylinderFunction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\CylinderFunctionControls\CylinderFunction.Designer.cs">
+      <DependentUpon>CylinderFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\CylinderFunctionControls\CylinderFunctionWithGasPressure.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\CylinderFunctionControls\CylinderFunctionWithGasPressure.Designer.cs">
+      <DependentUpon>CylinderFunctionWithGasPressure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\CylinderFunctionControls\IndicatorFunction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\CylinderFunctionControls\IndicatorFunction.Designer.cs">
+      <DependentUpon>IndicatorFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\Form_Analyzer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\Form_Analyzer.Designer.cs">
+      <DependentUpon>Form_Analyzer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\Form_LoadIndicatorFunction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\Form_LoadIndicatorFunction.Designer.cs">
+      <DependentUpon>Form_LoadIndicatorFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\InfoClasses\ChartAreaInfo.cs" />
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\InfoClasses\FunctionInfoAverage.cs" />
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\InfoClasses\FunctionInfoBase.cs" />
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\InfoClasses\FunctionInfoForce.cs" />
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\InfoClasses\FunctionInfoKinematics.cs" />
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\InfoClasses\FunctionInfoMoment.cs" />
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\InfoClasses\FunctionInfoReference.cs" />
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\InfoClasses\FunctionInfoSuperposition.cs" />
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\InfoClasses\FunctionInfoTorque.cs" />
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\InfoClasses\HarmonicOrderInfo.cs" />
+    <Compile Include="FloatingForms\EngineMonitors\Analyzer\InfoClasses\InterpolationMethodInfo.cs" />
+    <Compile Include="FloatingForms\EngineMonitors\Form_CrankshaftDiagram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Form_CrankshaftDiagram.Designer.cs">
+      <DependentUpon>Form_CrankshaftDiagram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Form_CycleDiagram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Form_CycleDiagram.Designer.cs">
+      <DependentUpon>Form_CycleDiagram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Form_EngineMonitorBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Form_ExhaustNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Form_ExhaustNote.Designer.cs">
+      <DependentUpon>Form_ExhaustNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Form_Statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FloatingForms\EngineMonitors\Form_Statistics.Designer.cs">
+      <DependentUpon>Form_Statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloatingForms\Form_EngineControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FloatingForms\Form_EngineControl.Designer.cs">
+      <DependentUpon>Form_EngineControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloatingForms\Form_FloatingBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_About.Designer.cs">
+      <DependentUpon>Form_About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\Form_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\Form_Main.Designer.cs">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\Form_MainEngine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\Form_MainEngine.Designer.cs">
+      <DependentUpon>Form_MainEngine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\Form_MainFunction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\Form_MainFunction.Designer.cs">
+      <DependentUpon>Form_MainFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\Form_MainIPart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\Form_MainIPart.Designer.cs">
+      <DependentUpon>Form_MainIPart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TestConsoles\TestConsole_MathParser.cs" />
+    <Compile Include="TestForms\CoordinateSystemFormD3D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForms\CoordinateSystemFormD3D.designer.cs">
+      <DependentUpon>CoordinateSystemFormD3D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForms\TestForm_AsyncFunctionComputing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForms\TestForm_AsyncFunctionComputing.designer.cs">
+      <DependentUpon>TestForm_AsyncFunctionComputing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForms\TestForm_ChartSerialization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForms\TestForm_ChartSerialization.Designer.cs">
+      <DependentUpon>TestForm_ChartSerialization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForms\TestForm_Functions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForms\TestForm_Functions.Designer.cs">
+      <DependentUpon>TestForm_Functions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForms\TestForm_IPart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForms\TestForm_IPart.Designer.cs">
+      <DependentUpon>TestForm_IPart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForms\TestForm_Sound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForms\TestForm_Sound.Designer.cs">
+      <DependentUpon>TestForm_Sound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\NewEngine\Form_NewEngineWizardBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizards\NewEngine\Form_NewEngineWizardBase.Designer.cs">
+      <DependentUpon>Form_NewEngineWizardBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\NewEngine\Form_NewEngineWizard_BalancerMassAndRotationRadius.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizards\NewEngine\Form_NewEngineWizard_BalancerMassAndRotationRadius.Designer.cs">
+      <DependentUpon>Form_NewEngineWizard_BalancerMassAndRotationRadius.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\NewEngine\Form_NewEngineWizard_BoreAndStroke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizards\NewEngine\Form_NewEngineWizard_BoreAndStroke.Designer.cs">
+      <DependentUpon>Form_NewEngineWizard_BoreAndStroke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\NewEngine\Form_NewEngineWizard_ConnectingRod_Length.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizards\NewEngine\Form_NewEngineWizard_ConnectingRod_Length.Designer.cs">
+      <DependentUpon>Form_NewEngineWizard_ConnectingRod_Length.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\NewEngine\Form_NewEngineWizard_ConnectingRod_MassAndMassDistribution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizards\NewEngine\Form_NewEngineWizard_ConnectingRod_MassAndMassDistribution.Designer.cs">
+      <DependentUpon>Form_NewEngineWizard_ConnectingRod_MassAndMassDistribution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\NewEngine\Form_NewEngineWizard_Cycle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizards\NewEngine\Form_NewEngineWizard_Cycle.Designer.cs">
+      <DependentUpon>Form_NewEngineWizard_Cycle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\NewEngine\Form_NewEngineWizard_EngineLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizards\NewEngine\Form_NewEngineWizard_EngineLayout.Designer.cs">
+      <DependentUpon>Form_NewEngineWizard_EngineLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\NewEngine\Form_NewEngineWizard_Finish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizards\NewEngine\Form_NewEngineWizard_Finish.Designer.cs">
+      <DependentUpon>Form_NewEngineWizard_Finish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\NewEngine\Form_NewEngineWizard_Flywheel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizards\NewEngine\Form_NewEngineWizard_Flywheel.Designer.cs">
+      <DependentUpon>Form_NewEngineWizard_Flywheel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\NewEngine\Form_NewEngineWizard_PistonMass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizards\NewEngine\Form_NewEngineWizard_PistonMass.Designer.cs">
+      <DependentUpon>Form_NewEngineWizard_PistonMass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\NewEngine\Form_NewEngineWizard_Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizards\NewEngine\Form_NewEngineWizard_Start.Designer.cs">
+      <DependentUpon>Form_NewEngineWizard_Start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\NewFunction\Form_NewFunctionWizardBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizards\NewFunction\Form_NewFunctionWizardBase.Designer.cs">
+      <DependentUpon>Form_NewFunctionWizardBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\NewFunction\Form_NewFunctionWizard_AlterFunction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizards\NewFunction\Form_NewFunctionWizard_AlterFunction.Designer.cs">
+      <DependentUpon>Form_NewFunctionWizard_AlterFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\NewFunction\Form_NewFunctionWizard_Finish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizards\NewFunction\Form_NewFunctionWizard_Finish.Designer.cs">
+      <DependentUpon>Form_NewFunctionWizard_Finish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\NewFunction\Form_NewFunctionWizard_MinMaxValuesBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizards\NewFunction\Form_NewFunctionWizard_MinMaxValuesBase.Designer.cs">
+      <DependentUpon>Form_NewFunctionWizard_MinMaxValuesBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\NewFunction\Form_NewFunctionWizard_MinMaxValues_IndicatorDiagram_GasPressureVsFiringAngle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizards\NewFunction\Form_NewFunctionWizard_MinMaxValues_IndicatorDiagram_GasPressureVsFiringAngle.Designer.cs">
+      <DependentUpon>Form_NewFunctionWizard_MinMaxValues_IndicatorDiagram_GasPressureVsFiringAngle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\NewFunction\Form_NewFunctionWizard_NumberOfStartingPoints.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizards\NewFunction\Form_NewFunctionWizard_NumberOfStartingPoints.Designer.cs">
+      <DependentUpon>Form_NewFunctionWizard_NumberOfStartingPoints.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\NewFunction\Form_NewFunctionWizard_Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizards\NewFunction\Form_NewFunctionWizard_Start.Designer.cs">
+      <DependentUpon>Form_NewFunctionWizard_Start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\NewFunction\Form_NewFunctionWizard_TypeOfFunction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizards\NewFunction\Form_NewFunctionWizard_TypeOfFunction.Designer.cs">
+      <DependentUpon>Form_NewFunctionWizard_TypeOfFunction.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{B09C69D9-5581-46A6-9B5E-15987869509F}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Environment\Environment.csproj">
+      <Project>{9AE99C57-AC84-4C3F-9CF9-C9A1A214D779}</Project>
+      <Name>Environment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Machine\Machine.csproj">
+      <Project>{B612F8FD-D271-41D1-9BDC-621ED3866323}</Project>
+      <Name>Machine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Media\Media.csproj">
+      <Project>{274C14DF-2E9E-44C5-97CD-3CDB23B5D239}</Project>
+      <Name>Media</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo_Pistons.ico" />
+    <None Include="Resources\wizard16x16.png" />
+    <None Include="Resources\save_as16x16.png" />
+    <None Include="Resources\refresh16x16.png" />
+    <None Include="Resources\paste16x16.png" />
+    <None Include="Resources\Logo_Vertical.png" />
+    <None Include="Resources\Kick.wav" />
+    <None Include="Resources\folder16x16.png" />
+    <None Include="Resources\folder_window16x16.png" />
+    <None Include="Resources\document_plain_new16x16.png" />
+    <None Include="Resources\disks16x16.png" />
+    <None Include="Resources\disk_blue16x16.png" />
+    <None Include="Resources\delete16x16.png" />
+    <None Include="Resources\copy16x16.png" />
+    <None Include="Resources\check16x16.png" />
+    <None Include="Resources\chart16x16.png" />
+    <None Include="Resources\book_blue16x16.png" />
+    <None Include="Resources\add16x16.png" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Help\EngineDesigner.chm">
+      <Link>EngineDesigner.chm</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\Charting\AxisOptions.resx">
+      <DependentUpon>AxisOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Editors\EngineEditor.resx">
+      <DependentUpon>EngineEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Editors\FunctionEditor.resx">
+      <DependentUpon>FunctionEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Editors\IPartEditor.resx">
+      <DependentUpon>IPartEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Viewers\EngineViewer.resx">
+      <DependentUpon>EngineViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Viewers\IPartViewer.resx">
+      <DependentUpon>IPartViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionAverage.resx">
+      <DependentUpon>Form_AddAFunctionAverage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionBase.resx">
+      <DependentUpon>Form_AddAFunctionBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionForce.resx">
+      <DependentUpon>Form_AddAFunctionForce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionKinematics.resx">
+      <DependentUpon>Form_AddAFunctionKinematics.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionMoment.resx">
+      <DependentUpon>Form_AddAFunctionMoment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionReference.resx">
+      <DependentUpon>Form_AddAFunctionReference.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionSuperposition.resx">
+      <DependentUpon>Form_AddAFunctionSuperposition.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloatingForms\EngineMonitors\Analyzer\AddFunctionForms\Form_AddAFunctionTorque.resx">
+      <DependentUpon>Form_AddAFunctionTorque.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloatingForms\EngineMonitors\Analyzer\CylinderFunctionControls\CylinderFunction.resx">
+      <DependentUpon>CylinderFunction.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloatingForms\EngineMonitors\Analyzer\CylinderFunctionControls\CylinderFunctionWithGasPressure.resx">
+      <DependentUpon>CylinderFunctionWithGasPressure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloatingForms\EngineMonitors\Analyzer\CylinderFunctionControls\IndicatorFunction.resx">
+      <DependentUpon>IndicatorFunction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloatingForms\EngineMonitors\Analyzer\Form_Analyzer.resx">
+      <DependentUpon>Form_Analyzer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloatingForms\EngineMonitors\Analyzer\Form_LoadIndicatorFunction.resx">
+      <DependentUpon>Form_LoadIndicatorFunction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloatingForms\EngineMonitors\Form_CrankshaftDiagram.resx">
+      <DependentUpon>Form_CrankshaftDiagram.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloatingForms\EngineMonitors\Form_CycleDiagram.resx">
+      <DependentUpon>Form_CycleDiagram.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloatingForms\EngineMonitors\Form_ExhaustNote.resx">
+      <DependentUpon>Form_ExhaustNote.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloatingForms\EngineMonitors\Form_Statistics.resx">
+      <DependentUpon>Form_Statistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloatingForms\Form_EngineControl.resx">
+      <DependentUpon>Form_EngineControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_About.resx">
+      <DependentUpon>Form_About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\Form_Main.resx">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\Form_MainEngine.resx">
+      <DependentUpon>Form_MainEngine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\Form_MainFunction.resx">
+      <DependentUpon>Form_MainFunction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\Form_MainIPart.resx">
+      <DependentUpon>Form_MainIPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForms\CoordinateSystemFormD3D.resx">
+      <DependentUpon>CoordinateSystemFormD3D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForms\TestForm_ChartSerialization.resx">
+      <DependentUpon>TestForm_ChartSerialization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForms\TestForm_Functions.resx">
+      <DependentUpon>TestForm_Functions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForms\TestForm_IPart.resx">
+      <DependentUpon>TestForm_IPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForms\TestForm_Sound.resx">
+      <DependentUpon>TestForm_Sound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewEngine\Form_NewEngineWizardBase.resx">
+      <DependentUpon>Form_NewEngineWizardBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewEngine\Form_NewEngineWizard_BalancerMassAndRotationRadius.resx">
+      <DependentUpon>Form_NewEngineWizard_BalancerMassAndRotationRadius.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewEngine\Form_NewEngineWizard_BoreAndStroke.resx">
+      <DependentUpon>Form_NewEngineWizard_BoreAndStroke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewEngine\Form_NewEngineWizard_ConnectingRod_Length.resx">
+      <DependentUpon>Form_NewEngineWizard_ConnectingRod_Length.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewEngine\Form_NewEngineWizard_ConnectingRod_MassAndMassDistribution.resx">
+      <DependentUpon>Form_NewEngineWizard_ConnectingRod_MassAndMassDistribution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewEngine\Form_NewEngineWizard_Cycle.resx">
+      <DependentUpon>Form_NewEngineWizard_Cycle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewEngine\Form_NewEngineWizard_EngineLayout.resx">
+      <DependentUpon>Form_NewEngineWizard_EngineLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewEngine\Form_NewEngineWizard_Finish.resx">
+      <DependentUpon>Form_NewEngineWizard_Finish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewEngine\Form_NewEngineWizard_Flywheel.resx">
+      <DependentUpon>Form_NewEngineWizard_Flywheel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewEngine\Form_NewEngineWizard_PistonMass.resx">
+      <DependentUpon>Form_NewEngineWizard_PistonMass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewEngine\Form_NewEngineWizard_Start.resx">
+      <DependentUpon>Form_NewEngineWizard_Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewFunction\Form_NewFunctionWizardBase.resx">
+      <DependentUpon>Form_NewFunctionWizardBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewFunction\Form_NewFunctionWizard_AlterFunction.resx">
+      <DependentUpon>Form_NewFunctionWizard_AlterFunction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewFunction\Form_NewFunctionWizard_Finish.resx">
+      <DependentUpon>Form_NewFunctionWizard_Finish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewFunction\Form_NewFunctionWizard_MinMaxValuesBase.resx">
+      <DependentUpon>Form_NewFunctionWizard_MinMaxValuesBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewFunction\Form_NewFunctionWizard_MinMaxValues_IndicatorDiagram_GasPressureVsFiringAngle.resx">
+      <DependentUpon>Form_NewFunctionWizard_MinMaxValues_IndicatorDiagram_GasPressureVsFiringAngle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewFunction\Form_NewFunctionWizard_NumberOfStartingPoints.resx">
+      <DependentUpon>Form_NewFunctionWizard_NumberOfStartingPoints.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewFunction\Form_NewFunctionWizard_Start.resx">
+      <DependentUpon>Form_NewFunctionWizard_Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\NewFunction\Form_NewFunctionWizard_TypeOfFunction.resx">
+      <DependentUpon>Form_NewFunctionWizard_TypeOfFunction.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

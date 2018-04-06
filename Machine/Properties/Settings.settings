@@ -1,0 +1,78 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EngineDesigner.Machine.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConRodBigEndPinAndCrankshaftDiameter_mm" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="PistonSkirtLengthVsCylinderBore" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">0.5</Value>
+    </Setting>
+    <Setting Name="GudgeonPinDistanceFromTopVsPistonSkirtLength" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">0.5</Value>
+    </Setting>
+    <Setting Name="DefaultPistonDiameter_mm" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="DefaultPistonMass_g" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="DefaultCrankThrowCrankRadius_mm" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="DefaultConnectingRodTotalMass_g" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="DefaultConnectingRodWeightAndDistanceDistribution" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">0.33</Value>
+    </Setting>
+    <Setting Name="PositionedCylinderDefaultPosition" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="PositionedCylinderDefaultOffset_mm" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PositionedCylinderDefaultTilt_deg" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PositionedCylinderDefaultFiringAngle_deg" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CrankThrowCrankPinWidthVsCrankRadius" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">0.25</Value>
+    </Setting>
+    <Setting Name="DefaultCrankThrowBalancerMass_g" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="CrankThrowBalancerRadiusVsCrankThrowRadius" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">0.33</Value>
+    </Setting>
+    <Setting Name="DefaultCrankThrowBalancerAngle_deg" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">180</Value>
+    </Setting>
+    <Setting Name="DefaultConnectingRodLengthVsStroke" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="DefaultConnectingRodLength_mm" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">200</Value>
+    </Setting>
+    <Setting Name="DefaultOffsetDivisor" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="CrankBalancerDiameter_mm" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="CrankBalancerWidth_mm" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="DefaultFlywheelDiameter_mm" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="DefaultFlywheelMass_g" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="FlywheelDiameterVsFlywheelWidth" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

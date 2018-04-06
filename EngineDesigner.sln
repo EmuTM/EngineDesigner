@@ -1,0 +1,189 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{9B858DFF-5192-4A8D-8BD5-BA7F0D3F1136}"
+	ProjectSection(SolutionItems) = preProject
+		SolutionItems\History.txt = SolutionItems\History.txt
+		SolutionItems\KnownBugs.txt = SolutionItems\KnownBugs.txt
+		SolutionItems\SolutionInfo.cs = SolutionItems\SolutionInfo.cs
+		SolutionItems\TaskTokens.txt = SolutionItems\TaskTokens.txt
+		SolutionItems\Temp.txt = SolutionItems\Temp.txt
+		SolutionItems\ToDo.txt = SolutionItems\ToDo.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{DE9C7D11-6460-40C0-BCAC-FB53644204BD}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\add.ico = Resources\add.ico
+		Resources\add16x16.png = Resources\add16x16.png
+		Resources\add24x24.png = Resources\add24x24.png
+		Resources\add32x32.png = Resources\add32x32.png
+		Resources\add48x48.png = Resources\add48x48.png
+		Resources\chart.ico = Resources\chart.ico
+		Resources\chart16x16.png = Resources\chart16x16.png
+		Resources\chart24x24.png = Resources\chart24x24.png
+		Resources\chart32x32.png = Resources\chart32x32.png
+		Resources\chart48x48.png = Resources\chart48x48.png
+		Resources\check.ico = Resources\check.ico
+		Resources\check16x16.png = Resources\check16x16.png
+		Resources\check24x24.png = Resources\check24x24.png
+		Resources\check32x32.png = Resources\check32x32.png
+		Resources\check48x48.png = Resources\check48x48.png
+		Resources\close.ico = Resources\close.ico
+		Resources\close16x16.png = Resources\close16x16.png
+		Resources\close24x24.png = Resources\close24x24.png
+		Resources\close32x32.png = Resources\close32x32.png
+		Resources\close48x48.png = Resources\close48x48.png
+		Resources\copy.ico = Resources\copy.ico
+		Resources\copy16x16.png = Resources\copy16x16.png
+		Resources\copy24x24.png = Resources\copy24x24.png
+		Resources\copy32x32.png = Resources\copy32x32.png
+		Resources\copy48x48.png = Resources\copy48x48.png
+		Resources\delete.ico = Resources\delete.ico
+		Resources\delete16x16.png = Resources\delete16x16.png
+		Resources\delete24x24.png = Resources\delete24x24.png
+		Resources\delete32x32.png = Resources\delete32x32.png
+		Resources\delete48x48.png = Resources\delete48x48.png
+		Resources\disk_blue.ico = Resources\disk_blue.ico
+		Resources\disk_blue16x16.png = Resources\disk_blue16x16.png
+		Resources\disk_blue24x24.png = Resources\disk_blue24x24.png
+		Resources\disk_blue32x32.png = Resources\disk_blue32x32.png
+		Resources\disk_blue48x48.png = Resources\disk_blue48x48.png
+		Resources\disks.ico = Resources\disks.ico
+		Resources\disks16x16.png = Resources\disks16x16.png
+		Resources\disks24x24.png = Resources\disks24x24.png
+		Resources\disks32x32.png = Resources\disks32x32.png
+		Resources\disks48x48.png = Resources\disks48x48.png
+		Resources\document_plain_new.ico = Resources\document_plain_new.ico
+		Resources\document_plain_new16x16.png = Resources\document_plain_new16x16.png
+		Resources\document_plain_new24x24.png = Resources\document_plain_new24x24.png
+		Resources\document_plain_new32x32.png = Resources\document_plain_new32x32.png
+		Resources\document_plain_new48x48.png = Resources\document_plain_new48x48.png
+		Resources\folder.ico = Resources\folder.ico
+		Resources\folder16x16.png = Resources\folder16x16.png
+		Resources\folder24x24.png = Resources\folder24x24.png
+		Resources\folder32x32.png = Resources\folder32x32.png
+		Resources\folder48x48.png = Resources\folder48x48.png
+		Resources\folder_window.ico = Resources\folder_window.ico
+		Resources\folder_window16x16.png = Resources\folder_window16x16.png
+		Resources\folder_window24x24.png = Resources\folder_window24x24.png
+		Resources\folder_window32x32.png = Resources\folder_window32x32.png
+		Resources\folder_window48x48.png = Resources\folder_window48x48.png
+		Resources\Kick.wav = Resources\Kick.wav
+		Resources\Logo_Horizontal.png = Resources\Logo_Horizontal.png
+		Resources\Logo_Pistons.ico = Resources\Logo_Pistons.ico
+		Resources\Logo_Pistons.png = Resources\Logo_Pistons.png
+		Resources\Logo_Vertical.png = Resources\Logo_Vertical.png
+		Resources\media_play.ico = Resources\media_play.ico
+		Resources\media_play16x16.png = Resources\media_play16x16.png
+		Resources\media_play24x24.png = Resources\media_play24x24.png
+		Resources\media_play32x32.png = Resources\media_play32x32.png
+		Resources\media_play48x48.png = Resources\media_play48x48.png
+		Resources\paste16x16.png = Resources\paste16x16.png
+		Resources\paste24x24.png = Resources\paste24x24.png
+		Resources\paste32x32.png = Resources\paste32x32.png
+		Resources\paste48x48.png = Resources\paste48x48.png
+		Resources\refresh.ico = Resources\refresh.ico
+		Resources\refresh16x16.png = Resources\refresh16x16.png
+		Resources\refresh24x24.png = Resources\refresh24x24.png
+		Resources\refresh32x32.png = Resources\refresh32x32.png
+		Resources\refresh48x48.png = Resources\refresh48x48.png
+		Resources\remove.ico = Resources\remove.ico
+		Resources\remove16x16.png = Resources\remove16x16.png
+		Resources\remove24x24.png = Resources\remove24x24.png
+		Resources\remove32x32.png = Resources\remove32x32.png
+		Resources\remove48x48.png = Resources\remove48x48.png
+		Resources\save_as.ico = Resources\save_as.ico
+		Resources\save_as16x16.png = Resources\save_as16x16.png
+		Resources\save_as24x24.png = Resources\save_as24x24.png
+		Resources\save_as32x32.png = Resources\save_as32x32.png
+		Resources\save_as48x48.png = Resources\save_as48x48.png
+		Resources\wizard.ico = Resources\wizard.ico
+		Resources\wizard128x128.png = Resources\wizard128x128.png
+		Resources\wizard16x16.png = Resources\wizard16x16.png
+		Resources\wizard24x24.png = Resources\wizard24x24.png
+		Resources\wizard256x256.png = Resources\wizard256x256.png
+		Resources\wizard32x32.png = Resources\wizard32x32.png
+		Resources\wizard48x48.png = Resources\wizard48x48.png
+		Resources\zoomin.ico = Resources\zoomin.ico
+		Resources\zoomin16x16.png = Resources\zoomin16x16.png
+		Resources\zoomin24x24.png = Resources\zoomin24x24.png
+		Resources\zoomin32x32.png = Resources\zoomin32x32.png
+		Resources\zoomin48x48.png = Resources\zoomin48x48.png
+		Resources\zoomout.ico = Resources\zoomout.ico
+		Resources\zoomout16x16.png = Resources\zoomout16x16.png
+		Resources\zoomout24x24.png = Resources\zoomout24x24.png
+		Resources\zoomout32x32.png = Resources\zoomout32x32.png
+		Resources\zoomout48x48.png = Resources\zoomout48x48.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Help", "Help", "{167D6D84-EE3D-4C08-9FAC-7D15B0B81DE3}"
+	ProjectSection(SolutionItems) = preProject
+		Help\EngineDesigner.chm = Help\EngineDesigner.chm
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Setup", "Setup", "{EF1379E6-2151-4AB9-8665-2859FCB40056}"
+	ProjectSection(SolutionItems) = preProject
+		Setup\BeforeInstallationNote.rtf = Setup\BeforeInstallationNote.rtf
+		Setup\License.rtf = Setup\License.rtf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{1C507811-A153-45F6-BC4D-4E1FF54E3A7B}"
+	ProjectSection(SolutionItems) = preProject
+		Samples\Analyzer.xml = Samples\Analyzer.xml
+		Samples\FourStrokeEngine.xml = Samples\FourStrokeEngine.xml
+		Samples\FourStrokeFunction.xml = Samples\FourStrokeFunction.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{3E499613-7865-4D29-BEC4-A08FD91B55AB}"
+	ProjectSection(SolutionItems) = preProject
+		Presentation\Engine designer.ppt = Presentation\Engine designer.ppt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Machine", "Machine\Machine.csproj", "{B612F8FD-D271-41D1-9BDC-621ED3866323}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Environment", "Environment\Environment.csproj", "{9AE99C57-AC84-4C3F-9CF9-C9A1A214D779}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{B09C69D9-5581-46A6-9B5E-15987869509F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Media", "Media\Media.csproj", "{274C14DF-2E9E-44C5-97CD-3CDB23B5D239}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EngineDesigner", "EngineDesigner\EngineDesigner.csproj", "{647E63ED-B649-4F5D-AD72-2A3DB484617E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Output", "Output", "{D39BF44B-6C70-48CB-8D47-DE13D69C1836}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B612F8FD-D271-41D1-9BDC-621ED3866323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B612F8FD-D271-41D1-9BDC-621ED3866323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B612F8FD-D271-41D1-9BDC-621ED3866323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B612F8FD-D271-41D1-9BDC-621ED3866323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AE99C57-AC84-4C3F-9CF9-C9A1A214D779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AE99C57-AC84-4C3F-9CF9-C9A1A214D779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AE99C57-AC84-4C3F-9CF9-C9A1A214D779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AE99C57-AC84-4C3F-9CF9-C9A1A214D779}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B09C69D9-5581-46A6-9B5E-15987869509F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B09C69D9-5581-46A6-9B5E-15987869509F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B09C69D9-5581-46A6-9B5E-15987869509F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B09C69D9-5581-46A6-9B5E-15987869509F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{274C14DF-2E9E-44C5-97CD-3CDB23B5D239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{274C14DF-2E9E-44C5-97CD-3CDB23B5D239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{274C14DF-2E9E-44C5-97CD-3CDB23B5D239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{274C14DF-2E9E-44C5-97CD-3CDB23B5D239}.Release|Any CPU.Build.0 = Release|Any CPU
+		{647E63ED-B649-4F5D-AD72-2A3DB484617E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{647E63ED-B649-4F5D-AD72-2A3DB484617E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{647E63ED-B649-4F5D-AD72-2A3DB484617E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{647E63ED-B649-4F5D-AD72-2A3DB484617E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D39BF44B-6C70-48CB-8D47-DE13D69C1836} = {EF1379E6-2151-4AB9-8665-2859FCB40056}
+	EndGlobalSection
+EndGlobal

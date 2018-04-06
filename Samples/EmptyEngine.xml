@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Engine xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/EngineDesigner.Machine">
+  <flywheel>
+    <diameter_mm>100</diameter_mm>
+    <guid>7f7dc37d-9ada-4145-a80d-d8e765e83fda</guid>
+    <mass_g>0</mass_g>
+  </flywheel>
+  <guid>d010b204-0671-46fa-8972-4385204481d8</guid>
+  <positionedCylinders />
+</Engine>

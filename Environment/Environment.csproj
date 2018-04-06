@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9AE99C57-AC84-4C3F-9CF9-C9A1A214D779}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EngineDesigner.Environment</RootNamespace>
+    <AssemblyName>EngineDesigner.Environment</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SolutionItems\SolutionInfo.cs">
+      <Link>SolutionInfo.cs</Link>
+    </Compile>
+    <Compile Include="About.cs" />
+    <Compile Include="Controls\Charting\AngleChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Charting\ChartBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Charting\ChartBase.Designer.cs">
+      <DependentUpon>ChartBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Charting\FunctionChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Charting\InputAngleChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Charting\InputAngleChart.Designer.cs">
+      <DependentUpon>InputAngleChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Charting\InputFunctionChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Charting\InputFunctionChart.Designer.cs">
+      <DependentUpon>InputFunctionChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Charting\MultiFunctionChart\MultiFunctionChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Charting\MultiFunctionChart\MultiFunctionChart.Designer.cs">
+      <DependentUpon>MultiFunctionChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Charting\MultiFunctionChart\MultiFunctionChartLegend.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Charting\MultiFunctionChart\MultiFunctionChartLegend.Designer.cs">
+      <DependentUpon>MultiFunctionChartLegend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Charting\ZoomableChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Charting\ZoomableChart.Designer.cs">
+      <DependentUpon>ZoomableChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ColorPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ColorPicker.Designer.cs">
+      <DependentUpon>ColorPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GroupPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GroupPanel.Designer.cs">
+      <DependentUpon>GroupPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NumericTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Shape.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Shape.Designer.cs">
+      <DependentUpon>Shape.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TableOfContents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TableOfContents.Designer.cs">
+      <DependentUpon>TableOfContents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_AboutBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AboutBase.Designer.cs">
+      <DependentUpon>Form_AboutBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_MainBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_MainBase.Designer.cs">
+      <DependentUpon>Form_MainBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Windows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Windows.Designer.cs">
+      <DependentUpon>Form_Windows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_WizardBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_WizardBase.Designer.cs">
+      <DependentUpon>Form_WizardBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\Charting\ChartBase.resx">
+      <DependentUpon>ChartBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Charting\InputAngleChart.resx">
+      <DependentUpon>InputAngleChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Charting\InputFunctionChart.resx">
+      <DependentUpon>InputFunctionChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Charting\MultiFunctionChart\MultiFunctionChart.resx">
+      <DependentUpon>MultiFunctionChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Charting\MultiFunctionChart\MultiFunctionChartLegend.resx">
+      <DependentUpon>MultiFunctionChartLegend.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Charting\ZoomableChart.resx">
+      <DependentUpon>ZoomableChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ColorPicker.resx">
+      <DependentUpon>ColorPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GroupPanel.resx">
+      <DependentUpon>GroupPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TableOfContents.resx">
+      <DependentUpon>TableOfContents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AboutBase.resx">
+      <DependentUpon>Form_AboutBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MainBase.resx">
+      <DependentUpon>Form_MainBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Windows.resx">
+      <DependentUpon>Form_Windows.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_WizardBase.resx">
+      <DependentUpon>Form_WizardBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_blue16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk_blue16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disks16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_plain_new16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_window16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_as16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{B09C69D9-5581-46A6-9B5E-15987869509F}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

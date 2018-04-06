@@ -1,0 +1,3 @@
+BUG V CHARTU (èe ima samo en datapoint in je ta na 0, 0, ga da na 1, 0)!!!
+èe daš "Close", ne dela veè New na main windowu
+povezava pri matanih cilindrih ni dobro pozicionirana, oz, gred na eni strani cilindra je predolga

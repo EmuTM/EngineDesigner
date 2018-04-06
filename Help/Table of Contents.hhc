@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Welcome">
+		<param name="Local" value="Welcome.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="About">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="License and terms of use">
+			<param name="Local" value="About\LicenseAndTermsOfUse.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="System requirements">
+			<param name="Local" value="About\SystemRequirements.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Getting started">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Engine designer environment">
+			<param name="Local" value="GettingStarted\EngineDesignerEnvironment.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Creating an engine using the wizard">
+			<param name="Local" value="GettingStarted\CreatingAnEngineUsingTheWizard.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Creating a function using the wizard">
+			<param name="Local" value="GettingStarted\CreatingAFunctionUsingTheWizard.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Digging deeper">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Customizing your engine">
+			<param name="Local" value="DiggingDeeper\CustomizingYourEngine.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Editing cylinders">
+			<param name="Local" value="DiggingDeeper\EditingCylinders.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Using Tools">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Engine control">
+			<param name="Local" value="UsingTools\EngineControl.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Cycle diagram">
+			<param name="Local" value="UsingTools\CycleDiagram.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Crankshaft diagram">
+			<param name="Local" value="UsingTools\CrankshaftDiagram.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Exhaust note">
+			<param name="Local" value="UsingTools\ExhaustNote.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Statistics">
+			<param name="Local" value="UsingTools\Statistics.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Analyzer">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Analizer UI">
+				<param name="Local" value="UsingTools\Analyzer\AnalyzerUI.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Adding a simple function">
+				<param name="Local" value="UsingTools\Analyzer\AddingASimpleFunction.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Adding a complex function">
+				<param name="Local" value="UsingTools\Analyzer\AddingAComplexFunction.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Creating an average">
+				<param name="Local" value="UsingTools\Analyzer\CreatingAnAverage.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Creating superposition">
+				<param name="Local" value="UsingTools\Analyzer\CreatingSuperposition.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="About the author">
+		<param name="Local" value="AboutTheAuthor.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Comunity">
+		<param name="Local" value="Comunity.htm">
+		</OBJECT>
+</UL>
+</BODY></HTML>

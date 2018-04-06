@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Function xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/EngineDesigner.Common.Definitions">
+  <points>
+    <XY>
+      <x>0</x>
+      <y>0</y>
+    </XY>
+    <XY>
+      <x>232.23622986056728</x>
+      <y>-0.29330589729730883</y>
+    </XY>
+    <XY>
+      <x>360</x>
+      <y>10</y>
+    </XY>
+    <XY>
+      <x>580</x>
+      <y>1</y>
+    </XY>
+    <XY>
+      <x>720</x>
+      <y>0</y>
+    </XY>
+  </points>
+  <sortedByX>true</sortedByX>
+</Function>

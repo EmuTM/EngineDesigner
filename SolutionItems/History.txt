@@ -1,0 +1,136 @@
+/// ÈE JE SPREDAJ NAPISANA VERZIJA, JE PUBLISHED! ///
+
+
+2015.05.21: : 1.1.2.*
+	positioned cylinder ni veè icomparable (ni bilo smiselno, ker je to uporabljal samo engine za izraèunavanje firing orderja); po novem je rešeno direktno v sortu, z delegatom, v engineu
+	vsi IPart so dobili Guid, da se ne primerjajo veè po referenci; posledièno so dobili Equals, ki jih primerja po Guidu!
+	Cycle in Stroke so dobili Equals namesto ==
+	odstranjenih nekaj warningov
+	FunctionInfo s cilindri po novem namesto positioned cilindra hranijo guid
+	Analyzer preverja inconsistency
+	dodan binary serializer v Serialization namespace
+	chart area tagger se po novem serializira v byte[] preko binary serializerja, da ni težav s serializacijo, ker je tagger navzven unknown type
+	save/load v Analyzerju
+	updatan help
+	bolj poenoteni messageboxi
+	dodani flywheel angular acceleration in velocity funkciji
+	add function ponudi že zloadano indikator funkcijo
+	functionInfo klasi vejo sami, èe rabijo indicator funkcijo
+	functionInfo klasi vejo sami, èe rabijo harmonic order
+	odpravljen bug v setupu zaradi katerega so mankali pomembni fajli
+
+2014.12.23:
+	izlušèene doloèene (bolj splošne) stvari v environment.dll
+	enginedesigner.exe ima zdaj gui in referenco na environment.dll
+
+2014.10.08: : 1.1.1.*
+	dodano izraèunavanje poljubne enaèbe (math parser)
+	
+2014.10.03: : 1.1.0.*
+	moved to Visual studio 2010
+	moved to framework 4.0
+	moved to slimdx
+	dodan izpis exceptiona v Panel3DBase izrisu
+	rešen problem z izpadanjem devicea
+	rendering je po novem v celoti HW (slabši pci odpadejo)
+	Any CPU now possible
+	
+2014.08.20: : 1.0.9.*
+	izraèunavanje fluktuacije navora in glajenja z vzrtajnikom
+	v analyzerju odstranjena funkcija "Flywheel angular acceleration" (potrebuje vhodni navor, zato še ni jasno kako bo izveden input)
+	v multifunction chart dodan še legend context menu closing event
+	v multifunction chart legend dodana opcija za urejanje tool tipov od legend itemov
+	analyzer pokaže podatke o funckiji v tool tipu od legend itema
+	
+2014.08.05:
+	Analyzer podpira izraèunavanje funkcij v threadpoolu
+	Analyzer kaže ready/busy stanje
+	Odpravljen bug v MultifunctionChart, zaradi katerega se labli in grafi niso dobro navpièno poravnavali (napaèni sklici zaradi copy-paste)
+
+2014.08.02:
+	v Function.cs je Constant postala Linear
+	dodani Flywheel smoothed grafi v Torque v Analyzer
+	color picker popravljen, da ni veè možno ne izbrati nobene barve v custom dialogu
+	
+2014.07.31:
+	v AddFunctionReference dodana komponenta K
+
+2014.06.17:
+	dodano izraèunavanje funkcij v threadpoolu (Common.Utility)
+
+2014.05.30:
+	odpravljen bug zaradi katerega se je v "Add function: Kinematics" disablal panel "With respect to"
+	Analyzer po novem vrže exception, èe funkcija ni podprta
+	dodana funkcija "Flywheel angular acceleration" v Analyzer (logike še ni!)
+
+2014.05.14:
+	degsps to rpm in rpm to degsps prestavljeno v Conversions
+
+2014.05.12:
+	rounding decimals se v Defaults se po novem preraèuna sam in je getter
+	zoomable chart se ne fokusira veè na OnMouseEnter ampak na OnMouseClick
+	panel3dBase se ne selecta veè na OnMouseEnter, ampak se fokusira na OnMouseDown
+	popravljen bug v multichartu zaradi katerega ni delal prav kurzor ob klikanju po grafu (potrebno je bilo skriti kurzorje na vseh chart areah, razen base)
+
+2014.05.05:
+	sprememba kode v chartu; zdaj že base toèno poštima axis (èe so vse vrednosti enake)
+
+2014.04.18:
+	charti so dobili možnost spreminjanja barve od labelov (torej številk in ostalih oznak na axisih)
+	multichart pobarva lable z barvo grafa, èe je grafov veè
+	chartbase poskrbi, da je vedno na axisu minimalna in maksimalna vrednost
+	popravljen bug z zoomom pri zoomable chartu (zdaj se resetira pravilno (zoom=0))
+
+2014.03.10:
+	serializacija v memoryStream in potem na disk
+
+2014.03.10:
+	dodano integriranje v klas Function
+	odpravljen bug v analyzerju, zaradi katerega se je usuvalo pri indikator funkcijah v superposition funkcijah (zdaj gleda rekurzivno vse spodaj ležeèe)
+	odstranjeni solution folderji Engines in Functions; namesto tega dodan folder Samples
+	dodana funkcija Value v Analyzer
+	dodan solution folder presentation s ppt prezentacijo
+
+2014.03.02:
+	dodan flywheel (samo za prikaz + wizard zaenkrat)
+	spremenjena zaèetni in konèni podaljšek roèiène gredi (odvisno od cilindra, ne veè povpreèno)
+	v analyzerju odstranjen CylinderInertiaForceReciprocatingVsRotating_N iz fast funkcije za celoten Engine (ker ne sme iti v superpozicijo)
+	analyzer opozori, ko je potreben redraw (ob spremembi rpm)
+	label z rpmji v analyzerju
+	spremenjena klass Function; interpolacija preko enuma + ustrezni popravki po referencah
+	dodano integriranje v klas Function
+	
+2014.03.01: : 1.0.8.*
+	spremenjeno hendlanje defaultov v wizardih
+	odpravljen bug v engineWizardu zaradi katerega se niso shranjevali parametri
+	dodan TruncateFunctionY v analyzer
+	dodane fukncije za momente v analyzer
+	dodane funkcije za skupen izris posamiènih cilindrov v analyzer
+	dodan "hek" v chart base, da èe je funkcija s samimi nulami, doloèi min=-1; max=+1
+	
+2014. 02. 27: : 1.0.7.*
+	razdeljene funkcije za sile na X, Y in Axial
+	popravljene AxisOptions v Analyzerju
+	
+2014. 02. 26: : 1.0.6.*
+	dodana average funkcija v analyzer
+	popravljena manjkajoèa ikona na gumbu za load indicator funkcije
+	
+2014. 01. 31: : 1.0.5.*
+	dodana statistika
+	malenkostni popravki
+	
+2013. 12. 13. : 1.0.4.*
+	customList ne deriva veè iz lista ampak implementira IList in List (za negenerièno castanje)
+	v ICustomCollection ni veè propertyja ToStringOverride (kašen je bil sploh smisel?)
+	dodelan CustomListConverter
+	dodana kontrola Report
+	dodan ObjectConverter type konverter
+	popravljen bug v engine controlu zaradi katerega se vèasih input angle chart ni obrnil na pravi cikel stopinj; ustrezne dodelave v angle chartu (circle ne sme biti veè niè, ampak samo negativen ali pozitiven)
+	
+2013. 12. 03. : 1.0.3.* : 
+	dodani nekateri dvotaktni motorji v wizard
+	predelano, da je base forma prazna in se tudi odpre prazna
+	
+2013. 12. 01. : 1.0.2.* : 
+	spremenjeno v Engine.cs, da je PositionedCylinders samo collection z get propertyjem; predelave editorjev kot posledica

@@ -1,0 +1,13 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=EngineDesigner.chm
+Contents file=Table of Contents.hhc
+Default topic=Welcome.htm
+Display compile progress=No
+Index file=Index.hhk
+Language=0x424 Slovenian (Slovenia)
+Title=Welcome
+
+
+[INFOTYPES]
+
