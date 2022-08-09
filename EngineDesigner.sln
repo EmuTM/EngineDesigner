@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{9B858DFF-5192-4A8D-8BD5-BA7F0D3F1136}"
 	ProjectSection(SolutionItems) = preProject
@@ -153,6 +153,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EngineDesigner", "EngineDes
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Output", "Output", "{D39BF44B-6C70-48CB-8D47-DE13D69C1836}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{D63FBAFF-6A9A-4B03-AB1A-A4FB5520A8C3}"
+	ProjectSection(SolutionItems) = preProject
+		Libs\MSChart.exe = Libs\MSChart.exe
+		Libs\MSChart_Supplemental Redist License_English.docx = Libs\MSChart_Supplemental Redist License_English.docx
+		Libs\SlimDX Runtime .NET 4.0 x64 (January 2012).msi = Libs\SlimDX Runtime .NET 4.0 x64 (January 2012).msi
+		Libs\SlimDX Runtime .NET 4.0 x86 (January 2012).msi = Libs\SlimDX Runtime .NET 4.0 x86 (January 2012).msi
+		Libs\SlimDX SDK (January 2012).msi = Libs\SlimDX SDK (January 2012).msi
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -185,5 +194,8 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D39BF44B-6C70-48CB-8D47-DE13D69C1836} = {EF1379E6-2151-4AB9-8665-2859FCB40056}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D2887BC-CC64-4626-9BF7-9DC095ED16C5}
 	EndGlobalSection
 EndGlobal
